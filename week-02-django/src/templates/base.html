@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-{% load staticfiles %}
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,6 +9,7 @@
     <meta name="author" content="">
     <title>{% block title %}sample{% endblock %}</title>
     <!-- <title /> -->
+    <link rel="stylesheet" href='{% static "css/base.css" %}'>
 </head>
 <body>
   {% block body %}{% endblock %}
